@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Poster</title>
+  <style>
+    *
+    {
+      box-sizing: border-box;
+   
+    }
+    body
+    {
+      font-family: Arial, Helvetica, sans-serif;
+      margin-top: 0;
+      
+    }
+    div{
+      margin-top: 0;
+      display: inline-block;
+      height: 800px;
+      width: 500px;
+      text-align: left;
+      line-height: 2px;
+    }
+    #poster{
+      background-color: rgb(199, 200, 202);
+      margin-top: 0;
+    }
+
+    .text{
+      display: inline-table;
+      width: 100%;
+      position: static;
+      
+    }
+    #text--left{
+      font-size: 12px;
+      top: 45%;
+      left: 15px;
+      position: absolute;
+      
+    }
+    #text--middle{
+      font-size: 12px;
+      top: 49%;
+      left: 205px;
+      position:absolute;
+      
+    }
+    #text--right{
+     font-size: 12px;
+     top: 49%;
+     left: 370px;
+     position: absolute;
+     
+    }
+    .text--back{
+      position: absolute;
+      top: -360px;
+      font-size: 900px;
+      color: rgba(186, 2, 98, 0.8);
+      margin-left: 0;
+      margin-right: 0;
+      margin-top: 30%;
+    }
+    .text--back{
+      font-family: Arial, sans-serif;
+    }
+    .text--front{
+      position: relative;
+      top: 240px;
+      font-size: 900px;
+      color:  rgba(1, 112, 168, 0.8);
+      margin-left: 0;
+      margin-right: 0;
+      margin-top: 30%;
+    }
+    .text--front{
+      font-family: Arial, sans-serif;
+    }
+    #text--bot{
+      top: 0;
+      size: auto;
+    }
+    
+  </style>
+</head>
+
+<body>
+  <div id="poster">
+    <div id="text--bot">
+      <h1 class="text--back" >2</h1>
+      <h1 class="text--front">5</h1>
+    </div>
+
+    <div class="text" id="text--left" >
+      <h2><b>25 ta life</b></h2>
+      <br>
+      <h4>with vision, close call,</h4>
+      <h4>blacklash, crown of thornz</h4>
+      <h4>and restraint / 7:30</h4>
+    </div>
+    <div class="text" id="text--middle">
+      <h4>hardcore lives</h4>
+      <h4>friday/ febrery 17 1995</h4>
+      <h4>support da scene</h4>
+    </div>
+    <div class="text" id="text--right">
+      <h4>at studio one</h4>
+      <h4>88-90 veron avenue</h4>
+      <h4>newark, new jersey</h4>
+    </div>
+
+  </div>
+</body>
+</html>
