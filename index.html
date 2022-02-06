@@ -16,19 +16,20 @@
       font-family: Arial, Helvetica, sans-serif;
       margin-top: 0;
       
+      
+      
+      
     }
     div{
-      margin-top: 0;
+      margin-top: 320px;
       display: inline-block;
       height: 800px;
       width: 500px;
       text-align: left;
       line-height: 2px;
+      
     }
-    #poster{
-      background-color: rgb(199, 200, 202);
-      margin-top: 0;
-    }
+    
 
     .text{
       display: inline-table;
@@ -38,64 +39,71 @@
     }
     #text--left{
       font-size: 12px;
-      top: 45%;
+      top: 7%;
       left: 15px;
       position: absolute;
       
     }
     #text--middle{
       font-size: 12px;
-      top: 49%;
+      top: 10%;
       left: 205px;
       position:absolute;
       
     }
     #text--right{
      font-size: 12px;
-     top: 49%;
+     top: 10%;
      left: 370px;
      position: absolute;
      
     }
     .text--back{
-      position: absolute;
-      top: -360px;
+      position: static;
+      display: inline;
       font-size: 900px;
       color: rgba(186, 2, 98, 0.8);
-      margin-left: 0;
-      margin-right: 0;
-      margin-top: 30%;
+      background-color: rgb(221, 241, 241);
     }
     .text--back{
       font-family: Arial, sans-serif;
     }
     .text--front{
       position: relative;
-      top: 240px;
+      display: inline;
+      top: 0;
+      left: -500px;
       font-size: 900px;
       color:  rgba(1, 112, 168, 0.8);
-      margin-left: 0;
-      margin-right: 0;
-      margin-top: 30%;
+      
+      
     }
     .text--front{
       font-family: Arial, sans-serif;
     }
     #text--bot{
-      top: 0;
-      size: auto;
+      top: auto;
+      size: 100px;
     }
+    #text--bot2{
+      top: auto;
+      size: 100px;
+    }
+    
     
   </style>
 </head>
 
 <body>
-  <div id="poster">
+  <!--<a class="background">-->
     <div id="text--bot">
-      <h1 class="text--back" >2</h1>
-      <h1 class="text--front">5</h1>
+      <h1 class="text--back" >2</h1>  
     </div>
 
+    <div id="text--bot2">
+      <h1 class="text--front">5</h1>
+    </div>
+    
     <div class="text" id="text--left" >
       <h2><b>25 ta life</b></h2>
       <br>
@@ -114,6 +122,6 @@
       <h4>newark, new jersey</h4>
     </div>
 
-  </div>
+  </a>
 </body>
 </html>
