@@ -5,7 +5,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>CSS Poster</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anonymous+Pro&family=Bangers&family=Comforter&family=Comforter+Brush&family=Croissant+One&family=Merriweather:ital@0;1&family=Pacifico&family=Work+Sans:wght@400;500;800&display=swap" rel="stylesheet">
   <style>
+    
     *
     {
       box-sizing: border-box;
@@ -14,114 +18,197 @@
     body
     {
       font-family: Arial, Helvetica, sans-serif;
-      margin-top: 0;
-      
-      
-      
       
     }
-    div{
-      margin-top: 320px;
+
+    .poster{
+      position: relative;
+      /*border: 3px dashed green;*/
       display: inline-block;
-      height: 800px;
-      width: 500px;
-      text-align: left;
-      line-height: 2px;
+      width: 506.56px;
+      height: 650px;
+      top: 0px;
       
     }
     
-
     .text{
       display: inline-table;
-      width: 100%;
-      position: static;
+     
       
     }
+
+    .details{
+      position: relative;
+      /*border: 3px dashed yellow;*/
+      top: 300px;
+      width: 506.56px;
+      height: 160px;
+    }
+
     #text--left{
       font-size: 12px;
-      top: 7%;
-      left: 15px;
-      position: absolute;
+      position: relative;
+      float: left;
+      top: 30px;
+      
+      
       
     }
     #text--middle{
       font-size: 12px;
-      top: 10%;
-      left: 205px;
-      position:absolute;
-      
-    }
-    #text--right{
-     font-size: 12px;
-     top: 10%;
-     left: 370px;
-     position: absolute;
+      position: relative;
+      top:60px;
+      left: 60px;
      
     }
-    .text--back{
-      position: static;
+
+    #text--right{
+     font-size: 12px;
+     position: relative;
+     float: right;
+     top: 60px;
+    }
+
+    .text--2{
+      position: absolute;
       display: inline;
       font-size: 900px;
       color: rgba(186, 2, 98, 0.8);
-      background-color: rgb(221, 241, 241);
+      background-color: rgba(221, 241, 241, 0.7);
+      /*border: 3px dashed;*/
+      width:506.56px;
+      margin: 0px;
+      top: -190px;
+      height: 830px;
     }
-    .text--back{
+    .text--2{
       font-family: Arial, sans-serif;
+      
     }
-    .text--front{
-      position: relative;
+    .text--5{
+      position: absolute;
       display: inline;
-      top: 0;
-      left: -500px;
       font-size: 900px;
       color:  rgba(1, 112, 168, 0.8);
-      
+      /*border: 3px dashed blue;*/
+      width:506.56px;
+      height: 839px;
+      margin: 0px;
+      top: -200px;
       
     }
-    .text--front{
+    .text--5{
       font-family: Arial, sans-serif;
+      
     }
-    #text--bot{
-      top: auto;
-      size: 100px;
+    h4{
+      margin: 0px;
     }
-    #text--bot2{
-      top: auto;
-      size: 100px;
+    h2{
+      margin: 0px;
     }
+
+    /*Typewriter*/
     
-    
+    .main-container{
+      position: relative;
+      width: 100%;
+      height: 100%;
+      color: #fff;
+      top: -100px;
+      font-family: 'Anonymous Pro', monospace;
+      font-size: 24px;
+      display: flex;
+      flex-direction:column;
+      justify-content:center;
+      align-items: center;
+
+      
+    }
+    .typewriter-text{
+      overflow: hidden;
+      position: relative;
+      top:200px;
+      width: 24em;
+      border-right: 2px solid rgba(255, 255, 255, 1);
+      font-size: 24px;
+      white-space: nowrap;
+
+      animation: typewriter 4s steps(44) 1s 1 normal both, 
+                 blinkTextCursor 400ms steps(44) infinite normal;
+      color: rgb(250, 247, 244);
+    }
+
+    /*
+    animation-name: typewriter;
+    animation-duration: 4s;
+    animation-timing-function: steps(44);
+    animation-delay: 1s;
+    animation-literation-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: both;
+    */
+
+    @keyframes typewriter {
+      from{
+        width: 0;
+      }
+      to{
+        width: 16.5em;
+      }
+    }
+
+    @keyframes blinkTextCursor{
+      
+      from{
+        border-right-color: rgba(255, 255, 255, 0.75);
+    }
+      to{
+        border-right-color: transparent;
+      }
+
+    }
+
   </style>
 </head>
 
 <body>
-  <!--<a class="background">-->
-    <div id="text--bot">
-      <h1 class="text--back" >2</h1>  
-    </div>
-
-    <div id="text--bot2">
-      <h1 class="text--front">5</h1>
-    </div>
+  <!--big numbers-->
+  
+  <div class="poster">
+      <h1 class="text--2" >2</h1>  
     
-    <div class="text" id="text--left" >
-      <h2><b>25 ta life</b></h2>
-      <br>
-      <h4>with vision, close call,</h4>
-      <h4>blacklash, crown of thornz</h4>
-      <h4>and restraint / 7:30</h4>
-    </div>
-    <div class="text" id="text--middle">
-      <h4>hardcore lives</h4>
-      <h4>friday/ febrery 17 1995</h4>
-      <h4>support da scene</h4>
-    </div>
-    <div class="text" id="text--right">
-      <h4>at studio one</h4>
-      <h4>88-90 veron avenue</h4>
-      <h4>newark, new jersey</h4>
-    </div>
+      <h1 class="text--5">5</h1>
+    
+  
 
-  </a>
+  <!--text 3 parrafos-->
+  <div class="details">
+      <div class="text" id="text--left" >
+        <h2><b>25 ta life</b></h2>
+        <br>
+        <h4>with vision, close call,</h4>
+        <h4>blacklash, crown of thornz</h4>
+        <h4>and restraint / 7:30</h4>
+      </div>
+      <div class="text" id="text--middle">
+        <h4>hardcore lives</h4>
+        <h4>friday/ febrery 17 1995</h4>
+        <h4>support da scene</h4>
+      </div>
+      <div class="text" id="text--right">
+        <h4>at studio one</h4>
+        <h4>88-90 veron avenue</h4>
+        <h4>newark, new jersey</h4>
+      </div>
+  <!--Typewriter Text Animation-->
+      <div class="main-container">
+        <div class="typewriter-text">Recreated by Diego Hermida !!!</div>
+      </div>
+
+      
+
+  </div>
+</div>
 </body>
 </html>
